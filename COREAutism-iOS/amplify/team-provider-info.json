@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-coreautismwatchosios-dev-125515-authRole",
+      "UnauthRoleArn": "arn:aws:iam::033461471261:role/amplify-coreautismwatchosios-dev-125515-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::033461471261:role/amplify-coreautismwatchosios-dev-125515-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-coreautismwatchosios-dev-125515-deployment",
+      "UnauthRoleName": "amplify-coreautismwatchosios-dev-125515-unauthRole",
+      "StackName": "amplify-coreautismwatchosios-dev-125515",
+      "StackId": "arn:aws:cloudformation:us-east-1:033461471261:stack/amplify-coreautismwatchosios-dev-125515/8a786a60-c811-11ed-af75-0ec9605a0fb7",
+      "AmplifyAppId": "d2bzvyzujbabjc"
+    },
+    "categories": {
+      "auth": {
+        "coreautismwatchosios8ad32414": {}
+      },
+      "storage": {
+        "s33ed0658b": {}
+      }
+    }
+  }
+}
