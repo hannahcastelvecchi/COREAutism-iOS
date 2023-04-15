@@ -1,0 +1,14 @@
+{
+  "resourceName": "s33ed0658b",
+  "policyUUID": "3ed0658b",
+  "bucketName": "coreautismwatchosios57dfd5a5e1b8453f977954bfed3",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
