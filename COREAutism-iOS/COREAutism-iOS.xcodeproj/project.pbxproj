@@ -1,0 +1,1366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1105D41829E5BBA30018D4C9 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 1105D41729E5BBA30018D4C9 /* AWSAPIPlugin */; };
+		1105D41A29E5BBA30018D4C9 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 1105D41929E5BBA30018D4C9 /* AWSCognitoAuthPlugin */; };
+		1105D41C29E5BBA30018D4C9 /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 1105D41B29E5BBA30018D4C9 /* AWSDataStorePlugin */; };
+		1105D41E29E5BBA30018D4C9 /* AWSLocationGeoPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 1105D41D29E5BBA30018D4C9 /* AWSLocationGeoPlugin */; };
+		1105D42029E5BBA30018D4C9 /* AWSPinpointAnalyticsPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 1105D41F29E5BBA30018D4C9 /* AWSPinpointAnalyticsPlugin */; };
+		1105D42229E5BBA30018D4C9 /* AWSPinpointPushNotificationsPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 1105D42129E5BBA30018D4C9 /* AWSPinpointPushNotificationsPlugin */; };
+		1105D42429E5BBA30018D4C9 /* AWSPluginsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1105D42329E5BBA30018D4C9 /* AWSPluginsCore */; };
+		1105D42629E5BBA30018D4C9 /* AWSS3StoragePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 1105D42529E5BBA30018D4C9 /* AWSS3StoragePlugin */; };
+		1105D42829E5BBA30018D4C9 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 1105D42729E5BBA30018D4C9 /* Amplify */; };
+		1105D42B29E5BBD90018D4C9 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 1105D42A29E5BBD90018D4C9 /* Amplify */; };
+		1153E3D329BBC57400B153FC /* COREAutism_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153E3D229BBC57400B153FC /* COREAutism_iOSApp.swift */; };
+		1153E3D529BBC57400B153FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153E3D429BBC57400B153FC /* ContentView.swift */; };
+		1153E3D729BBC57500B153FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1153E3D629BBC57500B153FC /* Assets.xcassets */; };
+		1153E3DA29BBC57500B153FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1153E3D929BBC57500B153FC /* Preview Assets.xcassets */; };
+		1153E3E429BBC57500B153FC /* COREAutism_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153E3E329BBC57500B153FC /* COREAutism_iOSTests.swift */; };
+		1153E3EE29BBC57500B153FC /* COREAutism_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153E3ED29BBC57500B153FC /* COREAutism_iOSUITests.swift */; };
+		1153E3F029BBC57500B153FC /* COREAutism_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153E3EF29BBC57500B153FC /* COREAutism_iOSUITestsLaunchTests.swift */; };
+		1153E3F429BBC57500B153FC /* COREAutism-iOS WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1153E3F329BBC57500B153FC /* COREAutism-iOS WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1153E3F929BBC57700B153FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1153E3F829BBC57700B153FC /* Assets.xcassets */; };
+		1153E3FF29BBC57700B153FC /* COREAutism-iOS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1153E3FE29BBC57700B153FC /* COREAutism-iOS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1153E40429BBC57700B153FC /* COREAutism_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153E40329BBC57700B153FC /* COREAutism_iOSApp.swift */; };
+		1153E40629BBC57700B153FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153E40529BBC57700B153FC /* ContentView.swift */; };
+		1153E40829BBC57700B153FC /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153E40729BBC57700B153FC /* NotificationController.swift */; };
+		1153E40A29BBC57700B153FC /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153E40929BBC57700B153FC /* NotificationView.swift */; };
+		1153E40C29BBC57700B153FC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153E40B29BBC57700B153FC /* ComplicationController.swift */; };
+		1153E40E29BBC57800B153FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1153E40D29BBC57800B153FC /* Assets.xcassets */; };
+		1153E41129BBC57800B153FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1153E41029BBC57800B153FC /* Preview Assets.xcassets */; };
+		1153E41D29BBC57800B153FC /* COREAutism_iOS_WatchKit_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153E41C29BBC57800B153FC /* COREAutism_iOS_WatchKit_AppTests.swift */; };
+		1153E42729BBC57800B153FC /* COREAutism_iOS_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153E42629BBC57800B153FC /* COREAutism_iOS_WatchKit_AppUITests.swift */; };
+		1153E42929BBC57800B153FC /* COREAutism_iOS_WatchKit_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153E42829BBC57800B153FC /* COREAutism_iOS_WatchKit_AppUITestsLaunchTests.swift */; };
+		1153E44729BBC6E300B153FC /* WatchConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153E44629BBC6E300B153FC /* WatchConnector.swift */; };
+		1153E44929BBC6EF00B153FC /* WatchConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153E44829BBC6EF00B153FC /* WatchConnector.swift */; };
+		11B7CA8829BE7742001528DF /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 11B7CA8729BE7742001528DF /* AWSCognitoAuthPlugin */; };
+		11B7CA8A29BE7742001528DF /* AWSS3StoragePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 11B7CA8929BE7742001528DF /* AWSS3StoragePlugin */; };
+		11B7CA8C29BE7742001528DF /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 11B7CA8B29BE7742001528DF /* Amplify */; };
+		11DD8E6F29CA2F6C006E3638 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 11DD8E6E29CA2F6C006E3638 /* amplifyconfiguration.json */; };
+		11DD8E7129CA2F71006E3638 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 11DD8E7029CA2F71006E3638 /* awsconfiguration.json */; };
+		11EEEEF029E5CA70007F1E03 /* AWSS3StoragePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 11EEEEEF29E5CA70007F1E03 /* AWSS3StoragePlugin */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1153E3E029BBC57500B153FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1153E3C729BBC57400B153FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1153E3CE29BBC57400B153FC;
+			remoteInfo = "COREAutism-iOS";
+		};
+		1153E3EA29BBC57500B153FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1153E3C729BBC57400B153FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1153E3CE29BBC57400B153FC;
+			remoteInfo = "COREAutism-iOS";
+		};
+		1153E3F529BBC57500B153FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1153E3C729BBC57400B153FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1153E3F229BBC57500B153FC;
+			remoteInfo = "COREAutism-iOS WatchKit App";
+		};
+		1153E40029BBC57700B153FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1153E3C729BBC57400B153FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1153E3FD29BBC57700B153FC;
+			remoteInfo = "COREAutism-iOS WatchKit Extension";
+		};
+		1153E41929BBC57800B153FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1153E3C729BBC57400B153FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1153E3FD29BBC57700B153FC;
+			remoteInfo = "COREAutism-iOS WatchKit Extension";
+		};
+		1153E42329BBC57800B153FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1153E3C729BBC57400B153FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1153E3F229BBC57500B153FC;
+			remoteInfo = "COREAutism-iOS WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1153E42F29BBC57800B153FC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1153E3FF29BBC57700B153FC /* COREAutism-iOS WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1153E43329BBC57800B153FC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1153E3F429BBC57500B153FC /* COREAutism-iOS WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1153E3CF29BBC57400B153FC /* COREAutism-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COREAutism-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1153E3D229BBC57400B153FC /* COREAutism_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COREAutism_iOSApp.swift; sourceTree = "<group>"; };
+		1153E3D429BBC57400B153FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1153E3D629BBC57500B153FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1153E3D929BBC57500B153FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1153E3DF29BBC57500B153FC /* COREAutism-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "COREAutism-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1153E3E329BBC57500B153FC /* COREAutism_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COREAutism_iOSTests.swift; sourceTree = "<group>"; };
+		1153E3E929BBC57500B153FC /* COREAutism-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "COREAutism-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1153E3ED29BBC57500B153FC /* COREAutism_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COREAutism_iOSUITests.swift; sourceTree = "<group>"; };
+		1153E3EF29BBC57500B153FC /* COREAutism_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COREAutism_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1153E3F329BBC57500B153FC /* COREAutism-iOS WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COREAutism-iOS WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1153E3F829BBC57700B153FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1153E3FE29BBC57700B153FC /* COREAutism-iOS WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "COREAutism-iOS WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1153E40329BBC57700B153FC /* COREAutism_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COREAutism_iOSApp.swift; sourceTree = "<group>"; };
+		1153E40529BBC57700B153FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1153E40729BBC57700B153FC /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		1153E40929BBC57700B153FC /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		1153E40B29BBC57700B153FC /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		1153E40D29BBC57800B153FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1153E41029BBC57800B153FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1153E41229BBC57800B153FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1153E41329BBC57800B153FC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		1153E41829BBC57800B153FC /* COREAutism-iOS WatchKit AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "COREAutism-iOS WatchKit AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1153E41C29BBC57800B153FC /* COREAutism_iOS_WatchKit_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COREAutism_iOS_WatchKit_AppTests.swift; sourceTree = "<group>"; };
+		1153E42229BBC57800B153FC /* COREAutism-iOS WatchKit AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "COREAutism-iOS WatchKit AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1153E42629BBC57800B153FC /* COREAutism_iOS_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COREAutism_iOS_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
+		1153E42829BBC57800B153FC /* COREAutism_iOS_WatchKit_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COREAutism_iOS_WatchKit_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1153E44629BBC6E300B153FC /* WatchConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnector.swift; sourceTree = "<group>"; };
+		1153E44829BBC6EF00B153FC /* WatchConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnector.swift; sourceTree = "<group>"; };
+		11DD8E6E29CA2F6C006E3638 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		11DD8E7029CA2F71006E3638 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1153E3CC29BBC57400B153FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1105D41E29E5BBA30018D4C9 /* AWSLocationGeoPlugin in Frameworks */,
+				1105D41829E5BBA30018D4C9 /* AWSAPIPlugin in Frameworks */,
+				1105D41A29E5BBA30018D4C9 /* AWSCognitoAuthPlugin in Frameworks */,
+				11EEEEF029E5CA70007F1E03 /* AWSS3StoragePlugin in Frameworks */,
+				1105D42B29E5BBD90018D4C9 /* Amplify in Frameworks */,
+				11B7CA8C29BE7742001528DF /* Amplify in Frameworks */,
+				1105D42429E5BBA30018D4C9 /* AWSPluginsCore in Frameworks */,
+				1105D42229E5BBA30018D4C9 /* AWSPinpointPushNotificationsPlugin in Frameworks */,
+				1105D42629E5BBA30018D4C9 /* AWSS3StoragePlugin in Frameworks */,
+				1105D41C29E5BBA30018D4C9 /* AWSDataStorePlugin in Frameworks */,
+				1105D42029E5BBA30018D4C9 /* AWSPinpointAnalyticsPlugin in Frameworks */,
+				1105D42829E5BBA30018D4C9 /* Amplify in Frameworks */,
+				11B7CA8829BE7742001528DF /* AWSCognitoAuthPlugin in Frameworks */,
+				11B7CA8A29BE7742001528DF /* AWSS3StoragePlugin in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1153E3DC29BBC57500B153FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1153E3E629BBC57500B153FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1153E3FB29BBC57700B153FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1153E41529BBC57800B153FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1153E41F29BBC57800B153FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1153E3C629BBC57400B153FC = {
+			isa = PBXGroup;
+			children = (
+				11DD8E7029CA2F71006E3638 /* awsconfiguration.json */,
+				11DD8E6E29CA2F6C006E3638 /* amplifyconfiguration.json */,
+				1153E3D129BBC57400B153FC /* COREAutism-iOS */,
+				1153E3E229BBC57500B153FC /* COREAutism-iOSTests */,
+				1153E3EC29BBC57500B153FC /* COREAutism-iOSUITests */,
+				1153E3F729BBC57500B153FC /* COREAutism-iOS WatchKit App */,
+				1153E40229BBC57700B153FC /* COREAutism-iOS WatchKit Extension */,
+				1153E41B29BBC57800B153FC /* COREAutism-iOS WatchKit AppTests */,
+				1153E42529BBC57800B153FC /* COREAutism-iOS WatchKit AppUITests */,
+				1153E3D029BBC57400B153FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1153E3D029BBC57400B153FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1153E3CF29BBC57400B153FC /* COREAutism-iOS.app */,
+				1153E3DF29BBC57500B153FC /* COREAutism-iOSTests.xctest */,
+				1153E3E929BBC57500B153FC /* COREAutism-iOSUITests.xctest */,
+				1153E3F329BBC57500B153FC /* COREAutism-iOS WatchKit App.app */,
+				1153E3FE29BBC57700B153FC /* COREAutism-iOS WatchKit Extension.appex */,
+				1153E41829BBC57800B153FC /* COREAutism-iOS WatchKit AppTests.xctest */,
+				1153E42229BBC57800B153FC /* COREAutism-iOS WatchKit AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1153E3D129BBC57400B153FC /* COREAutism-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1153E44429BBC6A600B153FC /* iPhone Views */,
+				1153E3D229BBC57400B153FC /* COREAutism_iOSApp.swift */,
+				1153E3D629BBC57500B153FC /* Assets.xcassets */,
+				1153E3D829BBC57500B153FC /* Preview Content */,
+			);
+			path = "COREAutism-iOS";
+			sourceTree = "<group>";
+		};
+		1153E3D829BBC57500B153FC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1153E3D929BBC57500B153FC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1153E3E229BBC57500B153FC /* COREAutism-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				1153E3E329BBC57500B153FC /* COREAutism_iOSTests.swift */,
+			);
+			path = "COREAutism-iOSTests";
+			sourceTree = "<group>";
+		};
+		1153E3EC29BBC57500B153FC /* COREAutism-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1153E3ED29BBC57500B153FC /* COREAutism_iOSUITests.swift */,
+				1153E3EF29BBC57500B153FC /* COREAutism_iOSUITestsLaunchTests.swift */,
+			);
+			path = "COREAutism-iOSUITests";
+			sourceTree = "<group>";
+		};
+		1153E3F729BBC57500B153FC /* COREAutism-iOS WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				1153E3F829BBC57700B153FC /* Assets.xcassets */,
+			);
+			path = "COREAutism-iOS WatchKit App";
+			sourceTree = "<group>";
+		};
+		1153E40229BBC57700B153FC /* COREAutism-iOS WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1153E44529BBC6B500B153FC /* Watch Views */,
+				1153E40329BBC57700B153FC /* COREAutism_iOSApp.swift */,
+				1153E40729BBC57700B153FC /* NotificationController.swift */,
+				1153E40929BBC57700B153FC /* NotificationView.swift */,
+				1153E40B29BBC57700B153FC /* ComplicationController.swift */,
+				1153E40D29BBC57800B153FC /* Assets.xcassets */,
+				1153E41229BBC57800B153FC /* Info.plist */,
+				1153E41329BBC57800B153FC /* PushNotificationPayload.apns */,
+				1153E40F29BBC57800B153FC /* Preview Content */,
+			);
+			path = "COREAutism-iOS WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		1153E40F29BBC57800B153FC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1153E41029BBC57800B153FC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1153E41B29BBC57800B153FC /* COREAutism-iOS WatchKit AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				1153E41C29BBC57800B153FC /* COREAutism_iOS_WatchKit_AppTests.swift */,
+			);
+			path = "COREAutism-iOS WatchKit AppTests";
+			sourceTree = "<group>";
+		};
+		1153E42529BBC57800B153FC /* COREAutism-iOS WatchKit AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1153E42629BBC57800B153FC /* COREAutism_iOS_WatchKit_AppUITests.swift */,
+				1153E42829BBC57800B153FC /* COREAutism_iOS_WatchKit_AppUITestsLaunchTests.swift */,
+			);
+			path = "COREAutism-iOS WatchKit AppUITests";
+			sourceTree = "<group>";
+		};
+		1153E44429BBC6A600B153FC /* iPhone Views */ = {
+			isa = PBXGroup;
+			children = (
+				1153E3D429BBC57400B153FC /* ContentView.swift */,
+				1153E44629BBC6E300B153FC /* WatchConnector.swift */,
+			);
+			path = "iPhone Views";
+			sourceTree = "<group>";
+		};
+		1153E44529BBC6B500B153FC /* Watch Views */ = {
+			isa = PBXGroup;
+			children = (
+				1153E40529BBC57700B153FC /* ContentView.swift */,
+				1153E44829BBC6EF00B153FC /* WatchConnector.swift */,
+			);
+			path = "Watch Views";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1153E3CE29BBC57400B153FC /* COREAutism-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1153E43429BBC57800B153FC /* Build configuration list for PBXNativeTarget "COREAutism-iOS" */;
+			buildPhases = (
+				1153E3CB29BBC57400B153FC /* Sources */,
+				1153E3CC29BBC57400B153FC /* Frameworks */,
+				1153E3CD29BBC57400B153FC /* Resources */,
+				1153E43329BBC57800B153FC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1153E3F629BBC57500B153FC /* PBXTargetDependency */,
+			);
+			name = "COREAutism-iOS";
+			packageProductDependencies = (
+				11B7CA8729BE7742001528DF /* AWSCognitoAuthPlugin */,
+				11B7CA8929BE7742001528DF /* AWSS3StoragePlugin */,
+				11B7CA8B29BE7742001528DF /* Amplify */,
+				1105D41729E5BBA30018D4C9 /* AWSAPIPlugin */,
+				1105D41929E5BBA30018D4C9 /* AWSCognitoAuthPlugin */,
+				1105D41B29E5BBA30018D4C9 /* AWSDataStorePlugin */,
+				1105D41D29E5BBA30018D4C9 /* AWSLocationGeoPlugin */,
+				1105D41F29E5BBA30018D4C9 /* AWSPinpointAnalyticsPlugin */,
+				1105D42129E5BBA30018D4C9 /* AWSPinpointPushNotificationsPlugin */,
+				1105D42329E5BBA30018D4C9 /* AWSPluginsCore */,
+				1105D42529E5BBA30018D4C9 /* AWSS3StoragePlugin */,
+				1105D42729E5BBA30018D4C9 /* Amplify */,
+				1105D42A29E5BBD90018D4C9 /* Amplify */,
+				11EEEEEF29E5CA70007F1E03 /* AWSS3StoragePlugin */,
+			);
+			productName = "COREAutism-iOS";
+			productReference = 1153E3CF29BBC57400B153FC /* COREAutism-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1153E3DE29BBC57500B153FC /* COREAutism-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1153E43729BBC57800B153FC /* Build configuration list for PBXNativeTarget "COREAutism-iOSTests" */;
+			buildPhases = (
+				1153E3DB29BBC57500B153FC /* Sources */,
+				1153E3DC29BBC57500B153FC /* Frameworks */,
+				1153E3DD29BBC57500B153FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1153E3E129BBC57500B153FC /* PBXTargetDependency */,
+			);
+			name = "COREAutism-iOSTests";
+			productName = "COREAutism-iOSTests";
+			productReference = 1153E3DF29BBC57500B153FC /* COREAutism-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1153E3E829BBC57500B153FC /* COREAutism-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1153E43A29BBC57800B153FC /* Build configuration list for PBXNativeTarget "COREAutism-iOSUITests" */;
+			buildPhases = (
+				1153E3E529BBC57500B153FC /* Sources */,
+				1153E3E629BBC57500B153FC /* Frameworks */,
+				1153E3E729BBC57500B153FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1153E3EB29BBC57500B153FC /* PBXTargetDependency */,
+			);
+			name = "COREAutism-iOSUITests";
+			productName = "COREAutism-iOSUITests";
+			productReference = 1153E3E929BBC57500B153FC /* COREAutism-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1153E3F229BBC57500B153FC /* COREAutism-iOS WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1153E43029BBC57800B153FC /* Build configuration list for PBXNativeTarget "COREAutism-iOS WatchKit App" */;
+			buildPhases = (
+				1153E3F129BBC57500B153FC /* Resources */,
+				1153E42F29BBC57800B153FC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1153E40129BBC57700B153FC /* PBXTargetDependency */,
+			);
+			name = "COREAutism-iOS WatchKit App";
+			productName = "COREAutism-iOS WatchKit App";
+			productReference = 1153E3F329BBC57500B153FC /* COREAutism-iOS WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1153E3FD29BBC57700B153FC /* COREAutism-iOS WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1153E42C29BBC57800B153FC /* Build configuration list for PBXNativeTarget "COREAutism-iOS WatchKit Extension" */;
+			buildPhases = (
+				1153E3FA29BBC57700B153FC /* Sources */,
+				1153E3FB29BBC57700B153FC /* Frameworks */,
+				1153E3FC29BBC57700B153FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "COREAutism-iOS WatchKit Extension";
+			productName = "COREAutism-iOS WatchKit Extension";
+			productReference = 1153E3FE29BBC57700B153FC /* COREAutism-iOS WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		1153E41729BBC57800B153FC /* COREAutism-iOS WatchKit AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1153E43D29BBC57800B153FC /* Build configuration list for PBXNativeTarget "COREAutism-iOS WatchKit AppTests" */;
+			buildPhases = (
+				1153E41429BBC57800B153FC /* Sources */,
+				1153E41529BBC57800B153FC /* Frameworks */,
+				1153E41629BBC57800B153FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1153E41A29BBC57800B153FC /* PBXTargetDependency */,
+			);
+			name = "COREAutism-iOS WatchKit AppTests";
+			productName = "COREAutism-iOS WatchKit AppTests";
+			productReference = 1153E41829BBC57800B153FC /* COREAutism-iOS WatchKit AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1153E42129BBC57800B153FC /* COREAutism-iOS WatchKit AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1153E44029BBC57800B153FC /* Build configuration list for PBXNativeTarget "COREAutism-iOS WatchKit AppUITests" */;
+			buildPhases = (
+				1153E41E29BBC57800B153FC /* Sources */,
+				1153E41F29BBC57800B153FC /* Frameworks */,
+				1153E42029BBC57800B153FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1153E42429BBC57800B153FC /* PBXTargetDependency */,
+			);
+			name = "COREAutism-iOS WatchKit AppUITests";
+			productName = "COREAutism-iOS WatchKit AppUITests";
+			productReference = 1153E42229BBC57800B153FC /* COREAutism-iOS WatchKit AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1153E3C729BBC57400B153FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					1153E3CE29BBC57400B153FC = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					1153E3DE29BBC57500B153FC = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 1153E3CE29BBC57400B153FC;
+					};
+					1153E3E829BBC57500B153FC = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 1153E3CE29BBC57400B153FC;
+					};
+					1153E3F229BBC57500B153FC = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					1153E3FD29BBC57700B153FC = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					1153E41729BBC57800B153FC = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 1153E3FD29BBC57700B153FC;
+					};
+					1153E42129BBC57800B153FC = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 1153E3F229BBC57500B153FC;
+					};
+				};
+			};
+			buildConfigurationList = 1153E3CA29BBC57400B153FC /* Build configuration list for PBXProject "COREAutism-iOS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1153E3C629BBC57400B153FC;
+			packageReferences = (
+				11B7CA8629BE7742001528DF /* XCRemoteSwiftPackageReference "amplify-ios" */,
+				11EA822829CA240F00B3256B /* XCRemoteSwiftPackageReference "amplify-ios" */,
+				11EA822929CA24BD00B3256B /* XCRemoteSwiftPackageReference "amplify-ios" */,
+				1159AD7329CA265300CF4EF2 /* XCRemoteSwiftPackageReference "amplify-ios" */,
+				1105D41629E5BBA30018D4C9 /* XCRemoteSwiftPackageReference "amplify-ios" */,
+				1105D42929E5BBD90018D4C9 /* XCRemoteSwiftPackageReference "amplify-ios" */,
+				11EEEEEE29E5CA70007F1E03 /* XCRemoteSwiftPackageReference "amplify-ios" */,
+			);
+			productRefGroup = 1153E3D029BBC57400B153FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1153E3CE29BBC57400B153FC /* COREAutism-iOS */,
+				1153E3DE29BBC57500B153FC /* COREAutism-iOSTests */,
+				1153E3E829BBC57500B153FC /* COREAutism-iOSUITests */,
+				1153E3F229BBC57500B153FC /* COREAutism-iOS WatchKit App */,
+				1153E3FD29BBC57700B153FC /* COREAutism-iOS WatchKit Extension */,
+				1153E41729BBC57800B153FC /* COREAutism-iOS WatchKit AppTests */,
+				1153E42129BBC57800B153FC /* COREAutism-iOS WatchKit AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1153E3CD29BBC57400B153FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11DD8E7129CA2F71006E3638 /* awsconfiguration.json in Resources */,
+				1153E3DA29BBC57500B153FC /* Preview Assets.xcassets in Resources */,
+				11DD8E6F29CA2F6C006E3638 /* amplifyconfiguration.json in Resources */,
+				1153E3D729BBC57500B153FC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1153E3DD29BBC57500B153FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1153E3E729BBC57500B153FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1153E3F129BBC57500B153FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1153E3F929BBC57700B153FC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1153E3FC29BBC57700B153FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1153E41129BBC57800B153FC /* Preview Assets.xcassets in Resources */,
+				1153E40E29BBC57800B153FC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1153E41629BBC57800B153FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1153E42029BBC57800B153FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1153E3CB29BBC57400B153FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1153E3D529BBC57400B153FC /* ContentView.swift in Sources */,
+				1153E44729BBC6E300B153FC /* WatchConnector.swift in Sources */,
+				1153E3D329BBC57400B153FC /* COREAutism_iOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1153E3DB29BBC57500B153FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1153E3E429BBC57500B153FC /* COREAutism_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1153E3E529BBC57500B153FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1153E3F029BBC57500B153FC /* COREAutism_iOSUITestsLaunchTests.swift in Sources */,
+				1153E3EE29BBC57500B153FC /* COREAutism_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1153E3FA29BBC57700B153FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1153E40829BBC57700B153FC /* NotificationController.swift in Sources */,
+				1153E44929BBC6EF00B153FC /* WatchConnector.swift in Sources */,
+				1153E40629BBC57700B153FC /* ContentView.swift in Sources */,
+				1153E40C29BBC57700B153FC /* ComplicationController.swift in Sources */,
+				1153E40429BBC57700B153FC /* COREAutism_iOSApp.swift in Sources */,
+				1153E40A29BBC57700B153FC /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1153E41429BBC57800B153FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1153E41D29BBC57800B153FC /* COREAutism_iOS_WatchKit_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1153E41E29BBC57800B153FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1153E42729BBC57800B153FC /* COREAutism_iOS_WatchKit_AppUITests.swift in Sources */,
+				1153E42929BBC57800B153FC /* COREAutism_iOS_WatchKit_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1153E3E129BBC57500B153FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1153E3CE29BBC57400B153FC /* COREAutism-iOS */;
+			targetProxy = 1153E3E029BBC57500B153FC /* PBXContainerItemProxy */;
+		};
+		1153E3EB29BBC57500B153FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1153E3CE29BBC57400B153FC /* COREAutism-iOS */;
+			targetProxy = 1153E3EA29BBC57500B153FC /* PBXContainerItemProxy */;
+		};
+		1153E3F629BBC57500B153FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1153E3F229BBC57500B153FC /* COREAutism-iOS WatchKit App */;
+			targetProxy = 1153E3F529BBC57500B153FC /* PBXContainerItemProxy */;
+		};
+		1153E40129BBC57700B153FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1153E3FD29BBC57700B153FC /* COREAutism-iOS WatchKit Extension */;
+			targetProxy = 1153E40029BBC57700B153FC /* PBXContainerItemProxy */;
+		};
+		1153E41A29BBC57800B153FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1153E3FD29BBC57700B153FC /* COREAutism-iOS WatchKit Extension */;
+			targetProxy = 1153E41929BBC57800B153FC /* PBXContainerItemProxy */;
+		};
+		1153E42429BBC57800B153FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1153E3F229BBC57500B153FC /* COREAutism-iOS WatchKit App */;
+			targetProxy = 1153E42329BBC57800B153FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1153E42A29BBC57800B153FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1153E42B29BBC57800B153FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1153E42D29BBC57800B153FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"COREAutism-iOS WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "COREAutism-iOS WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "COREAutism-iOS WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOS.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		1153E42E29BBC57800B153FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"COREAutism-iOS WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "COREAutism-iOS WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "COREAutism-iOS WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOS.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		1153E43129BBC57800B153FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = COREAutism_iOS_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "COREAutism-iOS WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "edu.missouri.COREAutism-iOS";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		1153E43229BBC57800B153FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = COREAutism_iOS_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "COREAutism-iOS WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "edu.missouri.COREAutism-iOS";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		1153E43529BBC57800B153FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"COREAutism-iOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1153E43629BBC57800B153FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"COREAutism-iOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1153E43829BBC57800B153FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/COREAutism-iOS.app/COREAutism-iOS";
+			};
+			name = Debug;
+		};
+		1153E43929BBC57800B153FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/COREAutism-iOS.app/COREAutism-iOS";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1153E43B29BBC57800B153FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "COREAutism-iOS";
+			};
+			name = Debug;
+		};
+		1153E43C29BBC57800B153FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "COREAutism-iOS";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1153E43E29BBC57800B153FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOS-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/COREAutism-iOS WatchKit Extension.appex/COREAutism-iOS WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		1153E43F29BBC57800B153FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOS-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/COREAutism-iOS WatchKit Extension.appex/COREAutism-iOS WatchKit Extension";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		1153E44129BBC57800B153FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOS-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "COREAutism-iOS WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		1153E44229BBC57800B153FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOS-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "COREAutism-iOS WatchKit App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1153E3CA29BBC57400B153FC /* Build configuration list for PBXProject "COREAutism-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1153E42A29BBC57800B153FC /* Debug */,
+				1153E42B29BBC57800B153FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1153E42C29BBC57800B153FC /* Build configuration list for PBXNativeTarget "COREAutism-iOS WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1153E42D29BBC57800B153FC /* Debug */,
+				1153E42E29BBC57800B153FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1153E43029BBC57800B153FC /* Build configuration list for PBXNativeTarget "COREAutism-iOS WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1153E43129BBC57800B153FC /* Debug */,
+				1153E43229BBC57800B153FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1153E43429BBC57800B153FC /* Build configuration list for PBXNativeTarget "COREAutism-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1153E43529BBC57800B153FC /* Debug */,
+				1153E43629BBC57800B153FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1153E43729BBC57800B153FC /* Build configuration list for PBXNativeTarget "COREAutism-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1153E43829BBC57800B153FC /* Debug */,
+				1153E43929BBC57800B153FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1153E43A29BBC57800B153FC /* Build configuration list for PBXNativeTarget "COREAutism-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1153E43B29BBC57800B153FC /* Debug */,
+				1153E43C29BBC57800B153FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1153E43D29BBC57800B153FC /* Build configuration list for PBXNativeTarget "COREAutism-iOS WatchKit AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1153E43E29BBC57800B153FC /* Debug */,
+				1153E43F29BBC57800B153FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1153E44029BBC57800B153FC /* Build configuration list for PBXNativeTarget "COREAutism-iOS WatchKit AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1153E44129BBC57800B153FC /* Debug */,
+				1153E44229BBC57800B153FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1105D41629E5BBA30018D4C9 /* XCRemoteSwiftPackageReference "amplify-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		1105D42929E5BBD90018D4C9 /* XCRemoteSwiftPackageReference "amplify-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		1159AD7329CA265300CF4EF2 /* XCRemoteSwiftPackageReference "amplify-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		11B7CA8629BE7742001528DF /* XCRemoteSwiftPackageReference "amplify-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		11EA822829CA240F00B3256B /* XCRemoteSwiftPackageReference "amplify-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		11EA822929CA24BD00B3256B /* XCRemoteSwiftPackageReference "amplify-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		11EEEEEE29E5CA70007F1E03 /* XCRemoteSwiftPackageReference "amplify-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1105D41729E5BBA30018D4C9 /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11EA822829CA240F00B3256B /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSAPIPlugin;
+		};
+		1105D41929E5BBA30018D4C9 /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11EA822829CA240F00B3256B /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		1105D41B29E5BBA30018D4C9 /* AWSDataStorePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11EA822829CA240F00B3256B /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSDataStorePlugin;
+		};
+		1105D41D29E5BBA30018D4C9 /* AWSLocationGeoPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11EA822829CA240F00B3256B /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSLocationGeoPlugin;
+		};
+		1105D41F29E5BBA30018D4C9 /* AWSPinpointAnalyticsPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11EA822829CA240F00B3256B /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSPinpointAnalyticsPlugin;
+		};
+		1105D42129E5BBA30018D4C9 /* AWSPinpointPushNotificationsPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11EA822829CA240F00B3256B /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSPinpointPushNotificationsPlugin;
+		};
+		1105D42329E5BBA30018D4C9 /* AWSPluginsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11EA822829CA240F00B3256B /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSPluginsCore;
+		};
+		1105D42529E5BBA30018D4C9 /* AWSS3StoragePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11EA822829CA240F00B3256B /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSS3StoragePlugin;
+		};
+		1105D42729E5BBA30018D4C9 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11EA822829CA240F00B3256B /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = Amplify;
+		};
+		1105D42A29E5BBD90018D4C9 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11EA822829CA240F00B3256B /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = Amplify;
+		};
+		11B7CA8729BE7742001528DF /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11B7CA8629BE7742001528DF /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		11B7CA8929BE7742001528DF /* AWSS3StoragePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11B7CA8629BE7742001528DF /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSS3StoragePlugin;
+		};
+		11B7CA8B29BE7742001528DF /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11B7CA8629BE7742001528DF /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = Amplify;
+		};
+		11EEEEEF29E5CA70007F1E03 /* AWSS3StoragePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11EA822829CA240F00B3256B /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSS3StoragePlugin;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1153E3C729BBC57400B153FC /* Project object */;
+}
