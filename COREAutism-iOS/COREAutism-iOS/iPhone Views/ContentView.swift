@@ -7,6 +7,7 @@
 
 // The following code (the uncommented section) is identical to the recorder application on the watchOS side. This is for testing purposes since we aren't yet able to transfer files from the watch to the iphone, and only iOS supports Amplify (which is uploads the files to the database)
 
+/*
 import SwiftUI
 import Foundation
 import AVFoundation
@@ -201,10 +202,11 @@ struct ContentView: View {
         }
     }
 }
+ */
 
 // This portion of code is what will be used as the base for when watch connectivity/transfering files is working properly
 
-/*
+
 import SwiftUI
 import Foundation
 import AVFoundation
@@ -324,4 +326,4 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
- }  */
+ }  
