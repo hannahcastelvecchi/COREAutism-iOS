@@ -44,7 +44,7 @@ struct ContentView: View {
     @State var Timer2: Timer?
     
     // This is where we connect iOS/watchOS
-    //@ObservedObject var watchConnection = WatchConnector()
+    @ObservedObject var watchConnection = WatchConnector()
     
     var body: some View {
         
@@ -112,7 +112,7 @@ struct ContentView: View {
                 // crashing for some reason:
                 
                 // request permission for microphone
-                /*
+                
                 self.AVsession.requestRecordPermission{(status) in
                 
                     if !status {
@@ -125,7 +125,7 @@ struct ContentView: View {
                         self.getAudios()
                     }
                 }
-                */
+                
             }
             catch{
                 print(error.localizedDescription)
@@ -159,7 +159,7 @@ struct ContentView: View {
                     print("The file is playable. This is where it would upload to database.")
                     
                     // This is where the file should be transferred, but the "transferFile" function is not working
-                    /*
+                    
                     print("HERE IS WHERE THE FILE WOULD BE TRANSFERRED")
                     if WCSession.isSupported() {
                         if self.watchConnection.session.isReachable {
@@ -168,7 +168,7 @@ struct ContentView: View {
                             //self.watchConnection.session.transferFile(fileName, metadata: nil)
                             self.watchConnection.sendFileToiOSApp(fileURL: fileName)
                         }
-                    } */
+                    }
                 }
                 else
                 {

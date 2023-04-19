@@ -39,8 +39,9 @@ class WatchConnector: NSObject, WCSessionDelegate,  ObservableObject {
         // URL to file to be sent to iOS app
         let metadata = ["filename": fileURL.lastPathComponent]
         
-        print("about to send file???")
+        print("Preparing to send file to iPhone")
         
+        // this is where the error is occuring
         session.transferFile(fileURL, metadata: metadata)
     }
 }
