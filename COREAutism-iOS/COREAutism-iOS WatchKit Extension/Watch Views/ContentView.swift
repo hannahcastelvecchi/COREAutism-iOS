@@ -164,9 +164,12 @@ struct ContentView: View {
                     if WCSession.isSupported() {
                         if self.watchConnection.session.isReachable {
                             print("transfering file")
+                            
+                            let message = ["fileName": fileName]
+                            self.watchConnection.session.sendMessage(message, replyHandler: nil, errorHandler: nil)
                             //let metadata = ["file name:", "recording\(audioList.count + 1).m4a"]
                             //self.watchConnection.session.transferFile(fileName, metadata: nil)
-                            self.watchConnection.sendFileToiOSApp(fileURL: fileName)
+                            //self.watchConnection.sendFileToiOSApp(fileURL: fileName)
                         }
                     }
                 }

@@ -53,11 +53,22 @@ class WatchConnector: UIResponder, UIApplicationDelegate, WCSessionDelegate, Obs
         print("Received file")
         if file.fileURL.pathExtension == "m4a" {
             self.receivedFileURL = file.fileURL
+            /*
             if let url = (self.receivedFileURL){
                 let filenameKey = url.lastPathComponent
                 print("Uploading file to S3 Database")
                 Amplify.Storage.uploadFile(key: filenameKey, local: url)
-            }
+            }*/
         }
     }
+    
+    func displayReceivedFile()
+    {
+        if let url = (self.receivedFileURL){
+            let filenameKey = url.lastPathComponent
+            print("Uploading file to S3 Database")
+            Amplify.Storage.uploadFile(key: filenameKey, local: url)
+        }
+    }
+    
 }
