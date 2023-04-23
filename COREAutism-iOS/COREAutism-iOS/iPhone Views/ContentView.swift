@@ -115,42 +115,6 @@ struct ContentView: View {
         }
     }
 }
-/*
-    var body: some View {
-        VStack {
-            List(files, id: \.url) { file in
-                NavigationLink(destination: Text(file.name)){
-                    Text(file.name)
-                }
-            }.navigationTitle("Files")
-            // Activate
-            Button(action: {
-                self.activateWatch()
-            }, label: {
-                Text("Activate Watch App")
-            })
-            
-            if (self.watchActivated){
-                Text("Watch activated. Check your watch app")
-            }
-            else {
-                Text("Watch app inactivate. Tap Activate button to refresh")
-            }
-            
-            // Communicate
-            /*TextField("Enter a message to send to watch: ", text: self.$watchMessage)
-            Button(action: {
-                self.sendMessageToWatch()
-            }, label: {
-                Text("Send message")
-            }) */
-        }
-        .padding()
-        .onAppear() {
-            self.activateWatch()
-        }
-    }
-} */
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

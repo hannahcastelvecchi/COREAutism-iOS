@@ -165,6 +165,7 @@ struct ContentView: View {
                         if self.watchConnection.session.isReachable {
                             print("transfering file")
                             
+                            // Attempting new transfer method
                             let message = ["fileName": fileName]
                             self.watchConnection.session.sendMessage(message, replyHandler: nil, errorHandler: nil)
                             //let metadata = ["file name:", "recording\(audioList.count + 1).m4a"]
