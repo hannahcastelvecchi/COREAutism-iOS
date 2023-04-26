@@ -10,6 +10,8 @@
 import UIKit
 import Amplify
 import Foundation
+import AVFoundation
+import AVKit
 import WatchConnectivity
 
 class WatchConnector: UIResponder, UIApplicationDelegate, WCSessionDelegate, ObservableObject {
@@ -52,6 +54,7 @@ class WatchConnector: UIResponder, UIApplicationDelegate, WCSessionDelegate, Obs
     
     // If message is received, file is transfered to database.
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        /*
         self.receivedFileURL = getMostRecentFileInTempDirectory()
         print("File transferred.")
         self.receivedFileNameKey = self.receivedFileURL?.lastPathComponent
@@ -59,10 +62,25 @@ class WatchConnector: UIResponder, UIApplicationDelegate, WCSessionDelegate, Obs
         Amplify.Storage.uploadFile(key: self.receivedFileNameKey!, local: self.receivedFileURL!)
         print("Appending file to iPhone list view.")
         self.files.append(self.receivedFileURL!)
+         */
+        if let fileData = message["fileData"] as? Data {
+            let tempDirectory = NSTemporaryDirectory()
+            self.receivedFileURL = URL(fileURLWithPath: tempDirectory).appendingPathComponent("recording\(self.files.count + 1).m4a")
+            self.receivedFileNameKey = receivedFileURL?.lastPathComponent
+            
+            do {
+                try fileData.write(to: self.receivedFileURL!)
+                print("Appending file to iPhone list view.")
+                self.files.append(self.receivedFileURL!)
+                print("Uploading file to S3 database.")
+                Amplify.Storage.uploadFile(key: self.receivedFileNameKey!, local: self.receivedFileURL!)
+            } catch {
+                    print("Error saving file data: \(error.localizedDescription)")
+            }
+        }
     }
     
     func getMostRecentFileInTempDirectory() -> URL? {
-        
         let fileManager = FileManager.default
         let tempDirectory = NSTemporaryDirectory()
         
@@ -87,5 +105,4 @@ class WatchConnector: UIResponder, UIApplicationDelegate, WCSessionDelegate, Obs
         
         return URL(fileURLWithPath: tempDirectory).appendingPathComponent(mostRecentFile)
     }
-    
 }
