@@ -10,6 +10,7 @@ import Foundation
 import AVFoundation
 import AVKit
 import WatchConnectivity
+import CoreFoundation
 //import Amplify
 
 // Source 1: https://www.youtube.com/watch?v=JQ1370Lw99c
@@ -67,6 +68,7 @@ struct ContentView: View {
                             Timer2 = nil
                             self.record.toggle()
                             // recording was stopped before minimum length
+                            print("Recording stopped due to button toggle.")
                             print("Did not finish the recording. File will be discarded")
                             return
                         }
@@ -78,6 +80,7 @@ struct ContentView: View {
                             if fileName == nil {
                                 print("File was nil.")
                             }
+                            print("Recording stopped automatically after 10 seconds")
                             self.record.toggle()
                             self.getAudios()
                         }
@@ -109,8 +112,6 @@ struct ContentView: View {
                 try self.AVsession.setCategory(.playAndRecord)
                 self.getAudios()
                 
-                // crashing for some reason:
-                
                 // request permission for microphone
                 
                 self.AVsession.requestRecordPermission{(status) in
@@ -141,6 +142,7 @@ struct ContentView: View {
     func recordAudio(audioList: [URL]) -> URL? {
         
         record.toggle()
+        print("Recording...")
         
         let tempDirectory = NSTemporaryDirectory()
         
@@ -163,14 +165,12 @@ struct ContentView: View {
                     print("HERE IS WHERE THE FILE WOULD BE TRANSFERRED")
                     if WCSession.isSupported() {
                         if self.watchConnection.session.isReachable {
-                            print("transfering file")
-                            
-                            // Attempting new transfer method
-                            let message = ["fileName": fileName]
-                            self.watchConnection.session.sendMessage(message, replyHandler: nil, errorHandler: nil)
-                            //let metadata = ["file name:", "recording\(audioList.count + 1).m4a"]
-                            //self.watchConnection.session.transferFile(fileName, metadata: nil)
-                            //self.watchConnection.sendFileToiOSApp(fileURL: fileName)
+                            print("Signaling file transfer.")
+                            // sending a message to iOS to signal file transfer
+                            let message = ["message": "new file created"]
+                            WCSession.default.sendMessage(message, replyHandler: nil, errorHandler: { error in
+                                print("Error sending message: \(error.localizedDescription)")
+                            })
                         }
                     }
                 }
