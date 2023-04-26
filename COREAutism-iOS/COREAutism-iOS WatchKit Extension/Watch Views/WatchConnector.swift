@@ -30,18 +30,4 @@ class WatchConnector: NSObject, WCSessionDelegate,  ObservableObject {
             print("Watch session activated")
         }
     }
-    
-    func sendFileToiOSApp(fileURL: URL) {
-        guard session.isReachable else {
-            print("WatchConnectivity session is not currently reachable")
-            return
-        }
-        // URL to file to be sent to iOS app
-        let metadata = ["filename": fileURL.lastPathComponent]
-        
-        print("Preparing to send file to iPhone")
-        
-        // this is where the error is occuring
-        session.transferFile(fileURL, metadata: metadata)
-    }
 }
