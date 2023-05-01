@@ -2,6 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string></string>
+		<string>processing</string>
+	</array>
+	<key>WKBackgroundModes</key>
+	<array>
+		<string></string>
+		<string></string>
+	</array>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<true/>
+		<key>UISceneConfigurations</key>
+		<dict/>
+	</dict>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>This app needs access to your microphone in order to record audio.</string>
 	<key>NSExtension</key>

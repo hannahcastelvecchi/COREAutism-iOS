@@ -26,7 +26,6 @@
 		1153E3F029BBC57500B153FC /* COREAutism_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153E3EF29BBC57500B153FC /* COREAutism_iOSUITestsLaunchTests.swift */; };
 		1153E3F429BBC57500B153FC /* COREAutism-iOS WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1153E3F329BBC57500B153FC /* COREAutism-iOS WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1153E3F929BBC57700B153FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1153E3F829BBC57700B153FC /* Assets.xcassets */; };
-		1153E3FF29BBC57700B153FC /* COREAutism-iOS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1153E3FE29BBC57700B153FC /* COREAutism-iOS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1153E40429BBC57700B153FC /* COREAutism_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153E40329BBC57700B153FC /* COREAutism_iOSApp.swift */; };
 		1153E40629BBC57700B153FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153E40529BBC57700B153FC /* ContentView.swift */; };
 		1153E40829BBC57700B153FC /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153E40729BBC57700B153FC /* NotificationController.swift */; };
@@ -69,21 +68,14 @@
 			remoteGlobalIDString = 1153E3F229BBC57500B153FC;
 			remoteInfo = "COREAutism-iOS WatchKit App";
 		};
-		1153E40029BBC57700B153FC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1153E3C729BBC57400B153FC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1153E3FD29BBC57700B153FC;
-			remoteInfo = "COREAutism-iOS WatchKit Extension";
-		};
-		1153E41929BBC57800B153FC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1153E3C729BBC57400B153FC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1153E3FD29BBC57700B153FC;
-			remoteInfo = "COREAutism-iOS WatchKit Extension";
-		};
 		1153E42329BBC57800B153FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1153E3C729BBC57400B153FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1153E3F229BBC57500B153FC;
+			remoteInfo = "COREAutism-iOS WatchKit App";
+		};
+		11D88F4B29FAF2F7004771D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1153E3C729BBC57400B153FC /* Project object */;
 			proxyType = 1;
@@ -93,17 +85,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1153E42F29BBC57800B153FC /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				1153E3FF29BBC57700B153FC /* COREAutism-iOS WatchKit Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1153E43329BBC57800B153FC /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -130,7 +111,6 @@
 		1153E3EF29BBC57500B153FC /* COREAutism_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COREAutism_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1153E3F329BBC57500B153FC /* COREAutism-iOS WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COREAutism-iOS WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1153E3F829BBC57700B153FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1153E3FE29BBC57700B153FC /* COREAutism-iOS WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "COREAutism-iOS WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1153E40329BBC57700B153FC /* COREAutism_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COREAutism_iOSApp.swift; sourceTree = "<group>"; };
 		1153E40529BBC57700B153FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1153E40729BBC57700B153FC /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
@@ -234,7 +214,6 @@
 				1153E3DF29BBC57500B153FC /* COREAutism-iOSTests.xctest */,
 				1153E3E929BBC57500B153FC /* COREAutism-iOSUITests.xctest */,
 				1153E3F329BBC57500B153FC /* COREAutism-iOS WatchKit App.app */,
-				1153E3FE29BBC57700B153FC /* COREAutism-iOS WatchKit Extension.appex */,
 				1153E41829BBC57800B153FC /* COREAutism-iOS WatchKit AppTests.xctest */,
 				1153E42229BBC57800B153FC /* COREAutism-iOS WatchKit AppUITests.xctest */,
 			);
@@ -423,34 +402,17 @@
 			buildConfigurationList = 1153E43029BBC57800B153FC /* Build configuration list for PBXNativeTarget "COREAutism-iOS WatchKit App" */;
 			buildPhases = (
 				1153E3F129BBC57500B153FC /* Resources */,
-				1153E42F29BBC57800B153FC /* Embed App Extensions */,
+				1153E3FA29BBC57700B153FC /* Sources */,
+				1153E3FB29BBC57700B153FC /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1153E40129BBC57700B153FC /* PBXTargetDependency */,
 			);
 			name = "COREAutism-iOS WatchKit App";
 			productName = "COREAutism-iOS WatchKit App";
 			productReference = 1153E3F329BBC57500B153FC /* COREAutism-iOS WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		1153E3FD29BBC57700B153FC /* COREAutism-iOS WatchKit Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1153E42C29BBC57800B153FC /* Build configuration list for PBXNativeTarget "COREAutism-iOS WatchKit Extension" */;
-			buildPhases = (
-				1153E3FA29BBC57700B153FC /* Sources */,
-				1153E3FB29BBC57700B153FC /* Frameworks */,
-				1153E3FC29BBC57700B153FC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "COREAutism-iOS WatchKit Extension";
-			productName = "COREAutism-iOS WatchKit Extension";
-			productReference = 1153E3FE29BBC57700B153FC /* COREAutism-iOS WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
+			productType = "com.apple.product-type.application";
 		};
 		1153E41729BBC57800B153FC /* COREAutism-iOS WatchKit AppTests */ = {
 			isa = PBXNativeTarget;
@@ -463,7 +425,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				1153E41A29BBC57800B153FC /* PBXTargetDependency */,
+				11D88F4C29FAF2F7004771D6 /* PBXTargetDependency */,
 			);
 			name = "COREAutism-iOS WatchKit AppTests";
 			productName = "COREAutism-iOS WatchKit AppTests";
@@ -496,7 +458,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					1153E3CE29BBC57400B153FC = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -512,12 +474,9 @@
 					1153E3F229BBC57500B153FC = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
-					1153E3FD29BBC57700B153FC = {
-						CreatedOnToolsVersion = 13.4.1;
-					};
 					1153E41729BBC57800B153FC = {
 						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = 1153E3FD29BBC57700B153FC;
+						TestTargetID = 1153E3F229BBC57500B153FC;
 					};
 					1153E42129BBC57800B153FC = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -551,7 +510,6 @@
 				1153E3DE29BBC57500B153FC /* COREAutism-iOSTests */,
 				1153E3E829BBC57500B153FC /* COREAutism-iOSUITests */,
 				1153E3F229BBC57500B153FC /* COREAutism-iOS WatchKit App */,
-				1153E3FD29BBC57700B153FC /* COREAutism-iOS WatchKit Extension */,
 				1153E41729BBC57800B153FC /* COREAutism-iOS WatchKit AppTests */,
 				1153E42129BBC57800B153FC /* COREAutism-iOS WatchKit AppUITests */,
 			);
@@ -588,16 +546,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1153E3F929BBC57700B153FC /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1153E3FC29BBC57700B153FC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 				1153E41129BBC57800B153FC /* Preview Assets.xcassets in Resources */,
 				1153E40E29BBC57800B153FC /* Assets.xcassets in Resources */,
+				1153E3F929BBC57700B153FC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,20 +644,15 @@
 			target = 1153E3F229BBC57500B153FC /* COREAutism-iOS WatchKit App */;
 			targetProxy = 1153E3F529BBC57500B153FC /* PBXContainerItemProxy */;
 		};
-		1153E40129BBC57700B153FC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1153E3FD29BBC57700B153FC /* COREAutism-iOS WatchKit Extension */;
-			targetProxy = 1153E40029BBC57700B153FC /* PBXContainerItemProxy */;
-		};
-		1153E41A29BBC57800B153FC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1153E3FD29BBC57700B153FC /* COREAutism-iOS WatchKit Extension */;
-			targetProxy = 1153E41929BBC57800B153FC /* PBXContainerItemProxy */;
-		};
 		1153E42429BBC57800B153FC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1153E3F229BBC57500B153FC /* COREAutism-iOS WatchKit App */;
 			targetProxy = 1153E42329BBC57800B153FC /* PBXContainerItemProxy */;
+		};
+		11D88F4C29FAF2F7004771D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1153E3F229BBC57500B153FC /* COREAutism-iOS WatchKit App */;
+			targetProxy = 11D88F4B29FAF2F7004771D6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -744,6 +690,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -802,6 +749,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -820,82 +768,28 @@
 			};
 			name = Release;
 		};
-		1153E42D29BBC57800B153FC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"COREAutism-iOS WatchKit Extension/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "COREAutism-iOS WatchKit Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "COREAutism-iOS WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOS.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.5;
-			};
-			name = Debug;
-		};
-		1153E42E29BBC57800B153FC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"COREAutism-iOS WatchKit Extension/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "COREAutism-iOS WatchKit Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "COREAutism-iOS WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOS.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 8.5;
-			};
-			name = Release;
-		};
 		1153E43129BBC57800B153FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FK37HMR87;
 				GENERATE_INFOPLIST_FILE = YES;
-				IBSC_MODULE = COREAutism_iOS_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "COREAutism-iOS WatchKit App";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs access to your microphone in order to record audio.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "edu.missouri.COREAutism-iOS";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOS.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -904,7 +798,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Debug;
 		};
@@ -913,14 +807,23 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FK37HMR87;
 				GENERATE_INFOPLIST_FILE = YES;
-				IBSC_MODULE = COREAutism_iOS_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "COREAutism-iOS WatchKit App";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs access to your microphone in order to record audio.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "edu.missouri.COREAutism-iOS";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOS.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -930,7 +833,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Release;
 		};
@@ -942,6 +845,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"COREAutism-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 6FK37HMR87;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -949,7 +853,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -972,6 +876,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"COREAutism-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 6FK37HMR87;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -979,7 +884,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1002,8 +907,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FK37HMR87;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1022,8 +928,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FK37HMR87;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1042,8 +949,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FK37HMR87;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOSUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1061,8 +969,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FK37HMR87;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOSUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1082,6 +991,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FK37HMR87;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOS-WatchKit-AppTests";
@@ -1090,8 +1000,8 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/COREAutism-iOS WatchKit Extension.appex/COREAutism-iOS WatchKit Extension";
-				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/COREAutism-iOS WatchKit App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/COREAutism-iOS WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Debug;
 		};
@@ -1102,6 +1012,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FK37HMR87;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOS-WatchKit-AppTests";
@@ -1110,9 +1021,9 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/COREAutism-iOS WatchKit Extension.appex/COREAutism-iOS WatchKit Extension";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/COREAutism-iOS WatchKit App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/COREAutism-iOS WatchKit App";
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Release;
 		};
@@ -1121,6 +1032,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FK37HMR87;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOS-WatchKit-AppUITests";
@@ -1130,7 +1042,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				TEST_TARGET_NAME = "COREAutism-iOS WatchKit App";
-				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Debug;
 		};
@@ -1139,6 +1051,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FK37HMR87;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.COREAutism-iOS-WatchKit-AppUITests";
@@ -1149,7 +1062,7 @@
 				TARGETED_DEVICE_FAMILY = 4;
 				TEST_TARGET_NAME = "COREAutism-iOS WatchKit App";
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Release;
 		};
@@ -1161,15 +1074,6 @@
 			buildConfigurations = (
 				1153E42A29BBC57800B153FC /* Debug */,
 				1153E42B29BBC57800B153FC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1153E42C29BBC57800B153FC /* Build configuration list for PBXNativeTarget "COREAutism-iOS WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1153E42D29BBC57800B153FC /* Debug */,
-				1153E42E29BBC57800B153FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
