@@ -13,6 +13,7 @@ import AVFoundation
 import AVKit
 import WatchConnectivity
 import Amplify
+import HealthKit
 
 // Source 1: https://www.youtube.com/watch?v=JQ1370Lw99c
 
@@ -36,6 +37,9 @@ struct RecordButtonStyle: ButtonStyle {
 }
 
 struct ContentView: View {
+    private var healthStore = HKHealthStore()
+    let heartRateQuantity = HKUnit(from: "count/min")
+    @State var heartval = 0
     @State var record = false
     @State var AVsession: AVAudioSession!
     @State var recorder: AVAudioRecorder!
@@ -59,7 +63,7 @@ struct ContentView: View {
                     
                     Text(i.relativeString)
                 }
-                
+                Text("\(heartval)")
                 Button(action: {
                     // recording audio
                     do{
@@ -76,7 +80,7 @@ struct ContentView: View {
                         }
                         
                         let fileName = recordAudio(audioList: audios)
-                        
+                        starthealthsample();
                         // wait for recording
                         Timer2 = Timer.scheduledTimer(withTimeInterval: 10, repeats: false) { _ in
                             if fileName == nil {
@@ -84,6 +88,8 @@ struct ContentView: View {
                             }
                             self.record.toggle()
                             self.getAudios()
+                            
+                        
                         }
                     }
                     
@@ -108,6 +114,7 @@ struct ContentView: View {
             Alert(title: Text("Error"), message: Text("Enable Access"))
         })
         .onAppear(){
+            authorizehealthkit()
             do{
                 self.AVsession = AVAudioSession.sharedInstance()
                 try self.AVsession.setCategory(.playAndRecord)
@@ -199,6 +206,21 @@ struct ContentView: View {
         catch{
             print(error.localizedDescription)
         }
+    }
+    
+    //func to authorize the usage of the health kit
+    func authorizehealthkit() {
+        // This is where we can specity exactly what health data we would try and collect
+        let healthtypes: Set = [HKObjectType.quantityType(forIdentifier: .heartRate)!]
+        
+        healthStore.requestAuthorization(toShare: healthtypes, read: healthtypes) {_, _ in}
+    }
+    
+    func starthealthsample() {
+        
+        let devicePredicate = HKQuery.predicateForObjects(from: [HKDevice.local()])
+        
+        
     }
 }
 
