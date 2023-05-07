@@ -22,3 +22,14 @@ Once both the Apple Watch and iPhone apps are running, follow these steps to use
 - The file that has just been recorded will appear under "Files" on the iPhone in the format "recording#.m4a"
 - Navigate to the configured S3 bucket. The file, "recording#.m4a" will appear as the most recently modified file in the bucket. From there, you may download and play the file.
 
+# Architecture 
+- COREAutism-iOS project is implemented using the Model-View-Control (MVC) architecture pattern for both the Apple Watch and iPhone views.
+- Model has any necessary data or business logic needed to generate both displays.
+- View is responsible for displaying the user interfaces of the watch and phone.
+- Controller handles any user input or interactions and updtes the Model and View as needed.
+- Project is configured to an Amazon S3 database where the audio files created by the application are stored.
+
+# Dependencies 
+List of Package Dependencies:
+- Amplify
+
