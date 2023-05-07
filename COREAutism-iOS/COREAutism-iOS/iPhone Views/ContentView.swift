@@ -28,17 +28,7 @@ struct ContentView: View {
     @ObservedObject var watchConnection = WatchConnector()
     
     func activateWatch() {
-        /*if let session = Optional(self.watchConnection.session) {
-            if session.isReachable {
-                print("WatchOS - Watch is available.")
-                self.watchActivated = true
-            } else {
-                print("WatchOS - Watch is not reachable.")
-            }
-        } else {
-            print("WatchOS - Session is not available.")
-        } */
-        
+        // test watch connection
         if self.watchConnection.session.isReachable {
             print("WatchOS - Watch is available.")
             self.watchActivated = true

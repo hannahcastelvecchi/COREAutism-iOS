@@ -165,13 +165,6 @@ struct ContentView: View {
                     print("HERE IS WHERE THE FILE WOULD BE TRANSFERRED")
                     if WCSession.isSupported() {
                         if self.watchConnection.session.isReachable {
-                            /*
-                            print("Signaling file transfer.")
-                            // sending a message to iOS to signal file transfer
-                            let message = ["message": "new file created"]
-                            WCSession.default.sendMessage(message, replyHandler: nil, errorHandler: { error in
-                                print("Error sending message: \(error.localizedDescription)")
-                            }) */
                             do {
                                 let fileData = try Data(contentsOf: fileName)
                                 let message = ["fileData": fileData]
