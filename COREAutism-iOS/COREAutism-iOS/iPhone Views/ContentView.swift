@@ -11,12 +11,13 @@ import AVFoundation
 import AVKit
 import WatchConnectivity
 import Amplify
-//import AmplifyPlugins
 // Source 1: https://www.youtube.com/watch?v=JQ1370Lw99c
 
 // Source 2: https://www.youtube.com/watch?v=Le1A_PehAFA&t=36s
- 
-// Source 3: https://www.youtube.com/watch?v=Le1A_PehAFA&t=36s
+
+// Source 3: https://www.youtube.com/watch?v=4k2zNLIkHYs
+
+
 import SwiftUI
 import AVFoundation
 import AVKit

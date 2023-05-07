@@ -5,7 +5,7 @@
 //  Created by Hannah Castelvecchi on 3/10/23.
 //
 
-// This file contains the code for activating the iOS/watchOS connectivity session (this is currently being used)
+// This file contains the code for activating the iOS/watchOS connectivity session
 
 import UIKit
 import Amplify

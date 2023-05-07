@@ -11,7 +11,6 @@ import AVFoundation
 import AVKit
 import WatchConnectivity
 import CoreFoundation
-//import Amplify
 
 // Source 1: https://www.youtube.com/watch?v=JQ1370Lw99c
 
