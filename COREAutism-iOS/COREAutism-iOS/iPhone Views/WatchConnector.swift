@@ -62,4 +62,23 @@ class WatchConnector: UIResponder, UIApplicationDelegate, WCSessionDelegate, Obs
             }
         }
     }
+    
+    func getFiles(){
+        
+        do {
+            let url = FileManager.default.temporaryDirectory
+            
+            let result = try FileManager.default.contentsOfDirectory(at: url, includingPropertiesForKeys: nil, options: .producesRelativePathURLs)
+            
+            // Remove old data
+            self.files.removeAll()
+            
+            for i in result {
+                self.files.append(i)
+            }
+        }
+        catch{
+            print(error.localizedDescription)
+        }
+    }
 }

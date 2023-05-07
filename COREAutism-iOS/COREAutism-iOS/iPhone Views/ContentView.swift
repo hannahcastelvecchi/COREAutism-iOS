@@ -63,6 +63,7 @@ struct ContentView: View {
         }
         .onAppear {
             self.activateWatch()
+            self.watchConnection.getFiles()
         }
     }
 }
