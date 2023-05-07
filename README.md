@@ -32,4 +32,14 @@ Once both the Apple Watch and iPhone apps are running, follow these steps to use
 # Dependencies 
 List of Package Dependencies:
 - Amplify
+- AmplifyUtilsNotifications
+- AppSyncRealTimeClient
+- aws-crt-swift
+- aws-sdk-swift
+- smithy-swift
+- SQLite.swift
+- Starscream
+- Swift-collections
+- swift-log
+- XMLCoder
 
