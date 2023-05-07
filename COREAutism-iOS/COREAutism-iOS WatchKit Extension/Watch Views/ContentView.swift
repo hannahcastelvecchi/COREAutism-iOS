@@ -75,11 +75,11 @@ struct ContentView: View {
                         let fileName = recordAudio(audioList: audios)
                         
                         // wait for recording
-                        Timer2 = Timer.scheduledTimer(withTimeInterval: 10, repeats: false) { _ in
+                        Timer2 = Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { _ in
                             if fileName == nil {
                                 print("File was nil.")
                             }
-                            print("Recording stopped automatically after 10 seconds")
+                            print("Recording stopped automatically after 5 seconds")
                             self.record.toggle()
                             self.getAudios()
                         }
@@ -153,15 +153,12 @@ struct ContentView: View {
             let recorder = try AVAudioRecorder(url: fileName, settings: settings)
             recorder.record()
             
-            Timer1 = Timer.scheduledTimer(withTimeInterval: 10, repeats: false) { _ in
+            Timer1 = Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { _ in
                 recorder.stop()
             
                                 if isPlayable(audioURL: fileName){
                     print("The file is playable. This is where it would upload to database.")
                     
-                    // This is where the file should be transferred, but the "transferFile" function is not working
-                    
-                    print("HERE IS WHERE THE FILE WOULD BE TRANSFERRED")
                     if WCSession.isSupported() {
                         if self.watchConnection.session.isReachable {
                             do {
