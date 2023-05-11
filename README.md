@@ -43,3 +43,8 @@ List of Package Dependencies:
 - swift-log
 - XMLCoder
 
+# Application Demo
+
+https://github.com/hannahcastelvecchi/COREAutism-iOS/assets/56701614/9da2fcaa-a575-44d8-a694-1b48de84e84e
+
+
